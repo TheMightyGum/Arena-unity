@@ -52,10 +52,7 @@ public class playerMovement : MonoBehaviour
         }
         else
         { //In air
-            velocity.y += gravity * Time.deltaTime;
-            Vector3 targetVelocity = move * airSpeed;
-            velocity.x = Mathf.Lerp(velocity.x, targetVelocity.x, airControl * Time.deltaTime);
-            velocity.z = Mathf.Lerp(velocity.z, targetVelocity.z, airControl * Time.deltaTime);
+            velocity.y += gravity * Time.deltaTime; //Apply gravity
         }
         characterController.Move(velocity * Time.deltaTime); //Moves player
 
