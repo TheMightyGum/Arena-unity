@@ -32,7 +32,7 @@ public class playerMovement : MonoBehaviour
         Cursor.visible = false;
     }
 
-    void Update()
+    private void FixedUpdate()
     {
         Vector3 move = moveAction.ReadValue<Vector2>().x * transform.right + moveAction.ReadValue<Vector2>().y * transform.forward;
         Vector2 look = lookAction.ReadValue<Vector2>() * Time.deltaTime * sensitivity;
@@ -61,5 +61,6 @@ public class playerMovement : MonoBehaviour
         xRotation -= look.y;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         camera.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        
     }
 }
