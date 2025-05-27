@@ -32,7 +32,7 @@ public class playerMovement : MonoBehaviour
         Cursor.visible = false;
     }
 
-    private void FixedUpdate()
+    void Update()
     {
         Vector3 move = moveAction.ReadValue<Vector2>().x * transform.right + moveAction.ReadValue<Vector2>().y * transform.forward;
         Vector2 look = lookAction.ReadValue<Vector2>() * Time.deltaTime * sensitivity;

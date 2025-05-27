@@ -10,7 +10,7 @@ public class weaponCamera : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         gameObject.transform.position = mainCamera.transform.position;
         gameObject.transform.rotation = mainCamera.transform.rotation;
