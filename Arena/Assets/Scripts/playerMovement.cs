@@ -41,7 +41,7 @@ public class playerMovement : MonoBehaviour
         {
             velocity.x = move.x * runSpeed;
             velocity.z = move.z * runSpeed;
-            if (jumpAction.WasPressedThisFrame()) //If space pressed, set initial jump velocity. Else reset velocity
+            if (jumpAction.IsPressed()) //If space pressed, set initial jump velocity. Else reset velocity
             {
                 velocity.y = jumpHeight;
             }
