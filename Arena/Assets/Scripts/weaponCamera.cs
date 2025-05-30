@@ -23,7 +23,7 @@ public class weaponCamera : MonoBehaviour
         gameObject.transform.rotation = GameObject.FindWithTag("MainCamera").transform.rotation;
         if (attackAction.WasPressedThisFrame() && weaponAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
         {
-            weaponAnimator.SetTrigger("Attack");
+            weaponAnimator.SetTrigger("Attack" + Random.Range(1, 3));
             audioSource.pitch = Random.Range(0.9f, 1.1f);
             audioSource.Play();
         }
