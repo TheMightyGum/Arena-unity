@@ -21,7 +21,7 @@ public class weaponCamera : MonoBehaviour
     {
         gameObject.transform.position = GameObject.FindWithTag("MainCamera").transform.position;
         gameObject.transform.rotation = GameObject.FindWithTag("MainCamera").transform.rotation;
-        if (attackAction.WasPressedThisFrame())
+        if (attackAction.WasPressedThisFrame() && weaponAnimator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
         {
             weaponAnimator.SetTrigger("Attack");
             audioSource.pitch = Random.Range(0.9f, 1.1f);
