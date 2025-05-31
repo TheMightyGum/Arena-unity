@@ -1028,6 +1028,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1823688467}
+  - {fileID: 1118062402}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1118062398
@@ -1041,7 +1042,6 @@ GameObject:
   - component: {fileID: 1118062402}
   - component: {fileID: 1118062401}
   - component: {fileID: 1118062399}
-  - component: {fileID: 1118062403}
   - component: {fileID: 1118062404}
   m_Layer: 0
   m_Name: WeaponCamera
@@ -1248,28 +1248,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118062398}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.6666665, z: 0}
+  m_LocalScale: {x: 1.25, y: 0.83333325, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1252700626}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 831393425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1118062403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1118062398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d1f5870738c91d4a9fd5d472dfaeb02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackSound: {fileID: 8300000, guid: 4c50345010ad9af46bd493e84fc1c226, type: 3}
-  weaponAnimator: {fileID: 1282869314}
 --- !u!82 &1118062404
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1430,11 +1416,6 @@ PrefabInstance:
 --- !u!4 &1252700626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 69946506700836546, guid: 10d41a90becc18a4e8cce19d66b8f48d, type: 3}
-  m_PrefabInstance: {fileID: 2039577368}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1282869314 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5494723914641677963, guid: 10d41a90becc18a4e8cce19d66b8f48d, type: 3}
   m_PrefabInstance: {fileID: 2039577368}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1359397311
@@ -1878,7 +1859,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 69946506700836546, guid: 10d41a90becc18a4e8cce19d66b8f48d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.45
+      value: 0.45000002
       objectReference: {fileID: 0}
     - target: {fileID: 69946506700836546, guid: 10d41a90becc18a4e8cce19d66b8f48d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2009,6 +1990,5 @@ SceneRoots:
   - {fileID: 2013410475}
   - {fileID: 624476637}
   - {fileID: 453464454}
-  - {fileID: 831393425}
   - {fileID: 1135712454}
-  - {fileID: 1118062402}
+  - {fileID: 831393425}
