@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 123407346}
   - component: {fileID: 123407347}
   - component: {fileID: 123407348}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,9 +220,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1717364813
+  m_SortingLayer: 1
+  m_SortingOrder: 20
   m_Sprite: {fileID: -2069003055, guid: 6cd3bf796facc7b45922f4af598841cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -233,7 +233,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &123407348
 Animator:
   serializedVersion: 7
@@ -1133,7 +1133,7 @@ Transform:
   m_GameObject: {fileID: 831393418}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.6, z: -2.339}
   m_LocalScale: {x: 0.8, y: 1.2, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1151,7 +1151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021644745}
   - component: {fileID: 1021644746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Goblin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,17 +1376,17 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60.000004
   orthographic: 0
   orthographic size: 5
-  m_Depth: 1
+  m_Depth: 5
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 8
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 0
@@ -1404,7 +1404,7 @@ Transform:
   m_GameObject: {fileID: 1118062398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
   m_LocalScale: {x: 1.25, y: 0.83333325, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1555,6 +1555,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2627957c13faba947899705cd8c1780a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2627957c13faba947899705cd8c1780a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2627957c13faba947899705cd8c1780a, type: 3}
       propertyPath: m_Name
@@ -1782,14 +1786,14 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: -5
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 119
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2055,6 +2059,14 @@ PrefabInstance:
     - target: {fileID: 3663429743599493337, guid: 10d41a90becc18a4e8cce19d66b8f48d, type: 3}
       propertyPath: m_Name
       value: Longsword
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663429743599493337, guid: 10d41a90becc18a4e8cce19d66b8f48d, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8415903562889267488, guid: 10d41a90becc18a4e8cce19d66b8f48d, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
