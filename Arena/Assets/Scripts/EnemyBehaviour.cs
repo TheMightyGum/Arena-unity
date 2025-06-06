@@ -7,7 +7,7 @@ public class EnemyBehaviour : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector3 lastCamPos;
     private Camera mainCam;
-    private int lastDirection = -1;
+    private int lastDirection = 99;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,6 +16,7 @@ public class EnemyBehaviour : MonoBehaviour
         animator = Visuals.GetComponent<Animator>();
         spriteRenderer = Visuals.GetComponent<SpriteRenderer>();
         mainCam = Camera.main;
+        animator.SetFloat("IsMoving", 0);
     }
 
     // Update is called once per frame
@@ -28,24 +29,28 @@ public class EnemyBehaviour : MonoBehaviour
             lastCamPos = mainCam.transform.position;
             transform.hasChanged = false;
 
-            Vector3 toCam = mainCam.transform.position - transform.position;
-            float angle = Vector3.SignedAngle(toCam, -transform.forward, Vector3.up);
-            angle =  angle + 180 % 360; //Just accept it
-            int dir = Mathf.FloorToInt(angle / 45); //Returns 0-7
+            Vector3 camVec = Vector3.Scale(mainCam.transform.position, new Vector3(1, 0, 1)); //Gives vector to player with y = 0
+            Vector3 enemyVec = Vector3.Scale(transform.position, new Vector3(1, 0, 1)); //Gives vector to enemy with y = 0
+            Vector3 toCam = camVec - enemyVec; //Vectore from player to enemy
 
-            print("Before: " + dir);
+            float angle = Vector3.SignedAngle(toCam, transform.forward, Vector3.up);
+            angle = (angle + 180 + 22.5f) % 360; // -180 to 180 -> 0 to 360
+            //print(angle);
+            int dir = Mathf.FloorToInt(angle / 45); //Returns 0-7
+            //print("Before: " + dir);
+
             if (dir > 4)
             {
                 dir = 8 - dir; //5 -> 3, 6 -> 2, 7 -> 1
                 spriteRenderer.flipX = true;
             }
             else spriteRenderer.flipX = false;
-            print("After: " + dir);
+            //print("After: " + dir);
             
             if (dir != lastDirection) 
             {
                 lastDirection = dir;
-                animator.SetInteger("Direction", dir);
+                animator.SetFloat("Direction", dir);
             }
         }
     }
