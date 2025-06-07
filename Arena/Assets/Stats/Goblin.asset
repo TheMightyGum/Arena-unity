@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618033f03f6091042abe39dbff87d6f3, type: 3}
+  m_Name: Goblin
+  m_EditorClassIdentifier: 
+  enemyName: Goblin
+  minHealth: 1
+  maxHealth: 8
+  minDamage: 1
+  maxDamage: 5
+  minExp: 65
+  maxExp: 100
+  STR: 30
+  INT: 20
+  WIL: 30
+  AGI: 40
+  END: 30
+  PER: 30
+  SPD: 30
+  LUC: 50

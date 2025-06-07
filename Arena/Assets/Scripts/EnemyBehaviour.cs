@@ -1,22 +1,30 @@
+
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
+    public EnemyStats stats;
+    public int maxHealth;
+    public int curHealth;
+
     private Transform Visuals;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Vector3 lastCamPos;
     private Camera mainCam;
-    private int lastDirection = 99;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Boring GetComponent stuff
         Visuals = this.transform.GetChild(0);
         animator = Visuals.GetComponent<Animator>();
         spriteRenderer = Visuals.GetComponent<SpriteRenderer>();
         mainCam = Camera.main;
         animator.SetFloat("IsMoving", 0);
+
+        maxHealth = Random.Range(stats.minHealth, stats.maxHealth + 1); //Sets maxHP
+        curHealth = maxHealth; //When enemy spawns, current HP = max HP
     }
 
     // Update is called once per frame
@@ -35,9 +43,7 @@ public class EnemyBehaviour : MonoBehaviour
 
             float angle = Vector3.SignedAngle(toCam, transform.forward, Vector3.up);
             angle = (angle + 180 + 22.5f) % 360; // -180 to 180 -> 0 to 360
-            //print(angle);
             int dir = Mathf.FloorToInt(angle / 45); //Returns 0-7
-            //print("Before: " + dir);
 
             if (dir > 4)
             {
@@ -45,11 +51,9 @@ public class EnemyBehaviour : MonoBehaviour
                 spriteRenderer.flipX = true;
             }
             else spriteRenderer.flipX = false;
-            //print("After: " + dir);
             
-            if (dir != lastDirection) 
+            if (dir != animator.GetFloat("Direction")) 
             {
-                lastDirection = dir;
                 animator.SetFloat("Direction", dir);
             }
         }
