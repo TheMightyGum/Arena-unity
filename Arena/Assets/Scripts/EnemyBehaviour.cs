@@ -13,9 +13,12 @@ public class EnemyBehaviour : MonoBehaviour
     public float CheckInterval = .5f;
     public float PlayerProximity = 2f;
 
+    public AudioClip ambientSound;
+    float soundTime;
+    float soundTimer;
+
     bool CanSeePlayer;
     float _time;
-    Vector3 target;
 
     Transform Visuals;
     Animator animator;
@@ -24,6 +27,7 @@ public class EnemyBehaviour : MonoBehaviour
     Camera mainCam;
     LayerMask layerMask;
     NavMeshAgent navMeshAgent;
+    AudioSource AudioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,7 +39,10 @@ public class EnemyBehaviour : MonoBehaviour
         mainCam = Camera.main;
         layerMask = LayerMask.GetMask("Walls");
         navMeshAgent = GetComponent<NavMeshAgent>();
+        AudioSource = GetComponent<AudioSource>();
 
+        AudioSource.clip = ambientSound;
+        resetSoundTimer();
         maxHealth = Random.Range(stats.minHealth, stats.maxHealth + 1); //Sets maxHP
         curHealth = maxHealth; //When enemy spawns, current HP = max HP
 
@@ -66,6 +73,14 @@ public class EnemyBehaviour : MonoBehaviour
                 navMeshAgent.SetDestination(GetFlatVec3(mainCam.transform.position));
             }
             _time -= CheckInterval;
+        }
+
+        soundTime += Time.deltaTime;
+        while (soundTime >= soundTimer)
+        {
+            AudioSource.Play();
+            resetSoundTimer();
+            soundTime -= soundTimer; 
         }
         
         //Move towards target IF not already at target
@@ -134,7 +149,10 @@ public class EnemyBehaviour : MonoBehaviour
             animator.SetFloat("Direction", dir);
         }
     }
-
+    void resetSoundTimer()
+    {
+        soundTimer = Random.Range(.5f, 5);
+    }
     Vector3 GetFlatVec3(Vector3 pos) { return Vector3.Scale(pos, new Vector3(1, 0, 1)); } //Function that returns position with y=0
     Vector3 FromTo (Vector3 origin, Vector3 target) { return (target - origin).normalized; } //Gets vector from origin to target
 }
