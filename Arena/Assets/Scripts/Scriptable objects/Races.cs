@@ -7,6 +7,11 @@ public class Races : ScriptableObject
     public StatBonus maleBonus;
     public StatBonus femaleBonus;
 
+    public StatBonus GetBonus(bool isMale)
+    {
+        return isMale ? maleBonus : femaleBonus;
+    }
+
     [System.Serializable]
     public struct StatBonus
     {
