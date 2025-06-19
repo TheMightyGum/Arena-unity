@@ -32,6 +32,8 @@ public class Attributes : MonoBehaviour
     public Image FatigueBar;
     public Image HPbar;
     public Image SPbar;
+    public Sprite Overlay3;
+    public Sprite Overlay2;
 
     public void Start()
     {
@@ -53,13 +55,15 @@ public class Attributes : MonoBehaviour
         {
             maxSP = (int)Mathf.Round(INT * playerClass.SPmultiplier);
             SP = maxSP;
+            SetBarHud();
         }
         else
         {
             SP = 0;
+            SetBarHud();
         }
 
-        maxHP = 25 + Random.Range(1, playerClass.hitDie); //TODO END health bonus
+        maxHP = 25 + Random.Range(1, playerClass.hitDie); //TODO endurance health bonus
         HP = maxHP;
 
         level = 1;
@@ -72,5 +76,25 @@ public class Attributes : MonoBehaviour
         FatigueBar.rectTransform.sizeDelta = new Vector2(55f, ((float)Fatigue / maxFatigue) * 156);
         HPbar.rectTransform.sizeDelta = new Vector2(55f, ((float)HP / maxHP) * 156);
         if (canUseMagic) SPbar.rectTransform.sizeDelta = new Vector2(55f, ((float)SP / maxSP) * 156);
+    }
+
+    void SetBarHud()
+    {
+        Transform parent = SPbar.transform.parent;
+        Image back = parent.GetChild(0).GetComponent<Image>();
+        Image overlay = parent.GetChild(4).GetComponent<Image>();
+        if (canUseMagic)
+        {
+            SPbar.enabled = true;
+            overlay.sprite = Overlay3;
+            back.rectTransform.sizeDelta = new Vector2(174, 186);
+            overlay.rectTransform.sizeDelta = new Vector2(174, 186);
+        } else
+        {
+            SPbar.enabled = false;
+            overlay.sprite = Overlay2;
+            back.rectTransform.sizeDelta = new Vector2(114, 186);
+            overlay.rectTransform.sizeDelta = new Vector2(114, 186);
+        }
     }
 }
