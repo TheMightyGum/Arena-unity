@@ -53,7 +53,16 @@
                 {
                     "name": "Stats/Inv",
                     "type": "Button",
-                    "id": "06570362-3417-4ba0-998f-ce77bd82f605",
+                    "id": "925d29fd-46c5-4256-ba35-06bcb98e90d2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Options",
+                    "type": "Button",
+                    "id": "31c0e9dc-17e9-4a30-87d1-d7b5aae22bd1",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -217,12 +226,23 @@
                 },
                 {
                     "name": "",
-                    "id": "90700b52-19d1-4abd-b398-805c2d3e886b",
+                    "id": "9f2bbdbe-63bc-4d2d-83d8-e7fd92f18875",
                     "path": "<Keyboard>/f1",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Stats/Inv",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74bc7230-3c23-4a93-ad7f-89a472a03b73",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Options",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
