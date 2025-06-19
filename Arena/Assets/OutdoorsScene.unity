@@ -917,19 +917,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db983c23e4e7e524ebb1b0cd0ce53a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  STR: 50
-  INT: 50
-  WIL: 50
-  AGI: 50
-  SPD: 50
-  END: 50
-  PER: 50
-  LUC: 50
-  Health: 50
-  maxHealth: 50
-  Fatigue: 100
-  SP: 200
-  SPmultiplier: 2
+  playerName: Talin Warhaft
+  playerRace: {fileID: 11400000, guid: d390ee3e313ff8843932e314e1983086, type: 2}
+  playerClass: {fileID: 11400000, guid: 96d3ef0946fec1e40833157e47e94a2c, type: 2}
+  isMale: 1
+  STR: 40
+  INT: 40
+  WIL: 40
+  AGI: 40
+  SPD: 40
+  END: 40
+  PER: 40
+  LUC: 40
+  HP: 0
+  maxHP: 0
+  Fatigue: 0
+  SP: 0
+  level: 1
+  XP: 0
   FatigueBar: {fileID: 419960324}
   HPbar: {fileID: 1792184402}
   SPbar: {fileID: 2088027732}
