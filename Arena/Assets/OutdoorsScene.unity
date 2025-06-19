@@ -917,18 +917,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db983c23e4e7e524ebb1b0cd0ce53a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  STR: 10
-  INT: 20
-  WIL: 0
-  AGI: 0
-  SPD: 0
-  END: 15
-  PER: 0
-  LUC: 0
-  Health: 0
+  STR: 50
+  INT: 50
+  WIL: 50
+  AGI: 50
+  SPD: 50
+  END: 50
+  PER: 50
+  LUC: 50
+  Health: 50
   maxHealth: 50
-  Fatigue: 0
-  SP: 0
+  Fatigue: 100
+  SP: 200
   SPmultiplier: 2
   FatigueBar: {fileID: 419960324}
   HPbar: {fileID: 1792184402}

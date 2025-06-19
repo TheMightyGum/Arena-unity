@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be96b504f00160244a110cf0d583fa6f, type: 3}
+  m_Name: Nord
+  m_EditorClassIdentifier: 
+  RaceName: Nord
+  maleBonus:
+    STR: 10
+    INT: -10
+    WIL: -10
+    AGI: -10
+    SPD: 0
+    END: 10
+    PER: 0
+    LUC: 0
+  femaleBonus:
+    STR: 0
+    INT: -10
+    WIL: 0
+    AGI: 0
+    SPD: 0
+    END: 0
+    PER: 0
+    LUC: 10
