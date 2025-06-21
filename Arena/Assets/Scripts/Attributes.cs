@@ -17,12 +17,12 @@ public class Attributes : MonoBehaviour
     public int PER = 40;
     public int LUC = 40;
 
-    public int damageMod;
-    public int magicDefMod;
-    public int toHitMod;
-    public int healthMod;
-    public int charismaMod;
-    public int maxWeight;
+    [HideInInspector] public int damageMod;
+    [HideInInspector] public int magicDefMod;
+    [HideInInspector] public int toHitMod;
+    [HideInInspector] public int healthMod;
+    [HideInInspector] public int charismaMod;
+    [HideInInspector] public int maxWeight;
 
     public int HP;
     public int maxHP;
