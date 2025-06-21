@@ -17,15 +17,23 @@ public class Attributes : MonoBehaviour
     public int PER = 40;
     public int LUC = 40;
 
+    public int damageMod;
+    public int magicDefMod;
+    public int toHitMod;
+    public int healthMod;
+    public int charismaMod;
+    public int maxWeight;
+
     public int HP;
     public int maxHP;
     public int Fatigue;
-    int maxFatigue;
+    public int maxFatigue;
 
     bool canUseMagic;
     public int SP;
-    int maxSP;
+    public int maxSP;
 
+    public int gold;
     public int level;
     public int XP;
 
@@ -47,6 +55,13 @@ public class Attributes : MonoBehaviour
         PER = 40 + statBonus.PER;
         LUC = 40 + statBonus.LUC;
 
+        damageMod = calcMod(STR);
+        magicDefMod = calcMod(INT);
+        toHitMod = calcMod(AGI);
+        healthMod = calcMod(END);
+        charismaMod = calcMod(PER);
+        maxWeight = STR * 2;
+
         maxFatigue = STR + END;
         Fatigue = maxFatigue;
 
@@ -59,6 +74,7 @@ public class Attributes : MonoBehaviour
         }
         else
         {
+            maxSP = 0;
             SP = 0;
             SetBarHud();
         }
@@ -97,4 +113,6 @@ public class Attributes : MonoBehaviour
             overlay.rectTransform.sizeDelta = new Vector2(114, 186);
         }
     }
+
+    int calcMod(int value) { return Mathf.FloorToInt(value / 5) - 10; }
 }

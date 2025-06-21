@@ -51,7 +51,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Stats/Inv",
+                    "name": "StatsMenu",
                     "type": "Button",
                     "id": "925d29fd-46c5-4256-ba35-06bcb98e90d2",
                     "expectedControlType": "",
@@ -231,7 +231,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Stats/Inv",
+                    "action": "StatsMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

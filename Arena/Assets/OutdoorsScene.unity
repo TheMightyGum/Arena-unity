@@ -1862,6 +1862,7 @@ GameObject:
   - component: {fileID: 624476636}
   - component: {fileID: 624476635}
   - component: {fileID: 624476634}
+  - component: {fileID: 624476638}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1954,6 +1955,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &624476638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624476633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e3a0437d9377e4198c902ebf8f599f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &651267923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,7 +2002,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -745, y: 375}
-  m_SizeDelta: {x: 200, y: 7}
+  m_SizeDelta: {x: 500, y: 7}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &651267925
 MonoBehaviour:
@@ -2125,7 +2138,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -745, y: 465}
-  m_SizeDelta: {x: 200, y: 7}
+  m_SizeDelta: {x: 500, y: 7}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &702834700
 MonoBehaviour:
@@ -2147,7 +2160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Talin
+  m_text: 'Talin Warhaft
 
 '
   m_isRightToLeft: 0
@@ -2237,13 +2250,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 721116480}
+  - component: {fileID: 721116481}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &721116480
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2269,6 +2283,44 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &721116481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721116479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa90c27c7da62f4da52f4d22b318866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes: {fileID: 831393419}
+  nameText: {fileID: 702834700}
+  raceText: {fileID: 1677797910}
+  classText: {fileID: 651267925}
+  strText: {fileID: 2025338065}
+  damageText: {fileID: 411784000}
+  weightText: {fileID: 1920144299}
+  intText: {fileID: 844157220}
+  spText: {fileID: 145563593}
+  wilText: {fileID: 1505129607}
+  magicDefText: {fileID: 81303400}
+  agiText: {fileID: 1015073018}
+  toHitText: {fileID: 395893344}
+  toDefText: {fileID: 1236435002}
+  spdText: {fileID: 279251128}
+  endText: {fileID: 1336706024}
+  hpModText: {fileID: 101392377}
+  healModText: {fileID: 417866960}
+  perText: {fileID: 1899351139}
+  charismaText: {fileID: 377221812}
+  lucText: {fileID: 202530291}
+  hpText: {fileID: 2036472525}
+  fatigueText: {fileID: 1765920027}
+  goldText: {fileID: 1192996110}
+  xpText: {fileID: 757798365}
+  levelText: {fileID: 1270575381}
 --- !u!1 &750037701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,7 +2731,10 @@ MonoBehaviour:
   HP: 0
   maxHP: 0
   Fatigue: 0
+  maxFatigue: 0
   SP: 0
+  maxSP: 0
+  gold: 0
   level: 1
   XP: 0
   FatigueBar: {fileID: 1792184402}
@@ -2703,7 +2758,7 @@ MonoBehaviour:
   runSpeed: 6
   airSpeed: 10
   airControl: 2
-  sensitivity: 30
+  sensitivity: 20
   jumpHeight: 5
   gravity: -20
 --- !u!143 &831393421
@@ -4060,7 +4115,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -745, y: 420}
-  m_SizeDelta: {x: 200, y: 7}
+  m_SizeDelta: {x: 500, y: 7}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1677797910
 MonoBehaviour:
