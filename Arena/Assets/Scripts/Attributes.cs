@@ -79,7 +79,7 @@ public class Attributes : MonoBehaviour
             SetBarHud();
         }
 
-        maxHP = 25 + Random.Range(1, playerClass.hitDie); //TODO endurance health bonus
+        maxHP = 25 + Random.Range(1, playerClass.hitDie) + healthMod;
         HP = maxHP;
 
         level = 1;
