@@ -15,27 +15,27 @@ MonoBehaviour:
   maleBackground: {fileID: 21300000, guid: df7407d800368da4a827e7a92ed96bd2, type: 3}
   femaleBackground: {fileID: 21300000, guid: 5963408bebbd6f4419cbe135886dc9d6, type: 3}
   maleFaces:
-  - {fileID: 21300000, guid: b6604988efb2ad347b7e05009c0c753c, type: 3}
-  - {fileID: 21300000, guid: c20159cc0217d264889f1de76b6ac4ef, type: 3}
-  - {fileID: 21300000, guid: ee7c6fa0823370942a25accf6c2eab32, type: 3}
-  - {fileID: 21300000, guid: 491194dbc22684b40baa236d43426300, type: 3}
-  - {fileID: 21300000, guid: b68ca20a1ce909742a0ee53db7388eb3, type: 3}
-  - {fileID: 21300000, guid: 55182a8b43c5fb245a685b7c62968b49, type: 3}
-  - {fileID: 21300000, guid: 8db7901e2fc4ead45a660208e3c2942b, type: 3}
-  - {fileID: 21300000, guid: e638476d249a80149902520dc1d67c30, type: 3}
-  - {fileID: 21300000, guid: 6a76c64534924f74ea1fbec72be4ba0f, type: 3}
-  - {fileID: 21300000, guid: 9c367a8927686644b9b604b0e8945c2d, type: 3}
+  - {fileID: 581523309, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: -1718572558, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 38997476, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 1058258084, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: -2070055860, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 880567193, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 12130913, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: -548656956, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 1877761168, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 1139270776, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
   femaleFaces:
-  - {fileID: 21300000, guid: 4b41c026414b02e4196f6c97f8fc9585, type: 3}
-  - {fileID: 21300000, guid: 1d8cf438011efa24db08514c0908fc37, type: 3}
-  - {fileID: 21300000, guid: a46a3cfd0baa656498deb89d0d0787f8, type: 3}
-  - {fileID: 21300000, guid: 141aaeaebabf0e949ab02e9164e811ad, type: 3}
-  - {fileID: 21300000, guid: fae7f96e5a0a7ef43aa3ec4ea850369a, type: 3}
-  - {fileID: 21300000, guid: ba266ef85e748624495c093128dcfe4e, type: 3}
-  - {fileID: 21300000, guid: 526e9f4e8ab7e6f44abbb141929043e6, type: 3}
-  - {fileID: 21300000, guid: 534ec65a8658c9349a7214b6ff8231e1, type: 3}
-  - {fileID: 21300000, guid: 4783a8b17c8008541b870db4d9928c38, type: 3}
-  - {fileID: 21300000, guid: 72bcd9f61e1f8f54190b15a1e65c50b1, type: 3}
+  - {fileID: 1027715692, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 1647194663, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 1627953235, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 1238761482, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 1374412721, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 503882774, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: -71696983, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: -1890082339, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 742504842, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
+  - {fileID: 512913990, guid: 1c42ef488af314b4a90bb9fa4d0ac52b, type: 3}
   maleBonus:
     STR: 0
     INT: 0
