@@ -12,7 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be96b504f00160244a110cf0d583fa6f, type: 3}
   m_Name: Khajiit
   m_EditorClassIdentifier: 
-  RaceName: Khajiit
+  maleBackground: {fileID: 21300000, guid: fa5ab82aece7f824bb656af7797c3992, type: 3}
+  femaleBackground: {fileID: 21300000, guid: 5fea375699cf14a4eb77deee41888f04, type: 3}
+  maleFaces:
+  - {fileID: 21300000, guid: 4509ac6f8664f074fa7cbbc0fc46f7df, type: 3}
+  - {fileID: 21300000, guid: a7c1f3ae402cd9249850f792ec9a7724, type: 3}
+  - {fileID: 21300000, guid: 4662212e7eecd6849a877f4ef34f2567, type: 3}
+  - {fileID: 21300000, guid: 7a6bf0d22cf0f4841ab94541164eeea5, type: 3}
+  - {fileID: 21300000, guid: 22903e13e1ae40f49b81ecc16fd0f02a, type: 3}
+  - {fileID: 21300000, guid: 55c62e9d3987d8c43a2e442fc1a7eefa, type: 3}
+  - {fileID: 21300000, guid: 2d1b7ba0b988f0a41aa4b17da47eca4b, type: 3}
+  - {fileID: 21300000, guid: 3495b1d89d8d8ed48ab9e0213136ec0b, type: 3}
+  - {fileID: 21300000, guid: 449054ffc637a524cb838179857cad41, type: 3}
+  - {fileID: 21300000, guid: b61c99e793f1316488c57791c07d6688, type: 3}
+  femaleFaces:
+  - {fileID: 21300000, guid: 15480cf64580afb459cbfa5dcb172681, type: 3}
+  - {fileID: 21300000, guid: 08fc375ba25f7324981d0ddda7941098, type: 3}
+  - {fileID: 21300000, guid: 10f2a7d57b9e46e4abe2b9c144daf4f9, type: 3}
+  - {fileID: 21300000, guid: c45d412812b6fbe4b9c9b28bcfad1788, type: 3}
+  - {fileID: 21300000, guid: 14fba04dd9ac3d044bca77d885c72108, type: 3}
+  - {fileID: 21300000, guid: 479141e7673563444af3701fee8a93ce, type: 3}
+  - {fileID: 21300000, guid: db60f623f174b1d48b8cb8bd22dc00ea, type: 3}
+  - {fileID: 21300000, guid: 173d76ddfd26e2e4eb22eb7b1b5e38bb, type: 3}
+  - {fileID: 21300000, guid: 4b3612b0a6fa3eb4ea1263b811592121, type: 3}
+  - {fileID: 21300000, guid: 94f9781509171d14ba58c23faf596af4, type: 3}
   maleBonus:
     STR: 0
     INT: 0

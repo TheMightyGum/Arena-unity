@@ -12,7 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be96b504f00160244a110cf0d583fa6f, type: 3}
   m_Name: Breton
   m_EditorClassIdentifier: 
-  RaceName: Breton
+  maleBackground: {fileID: 21300000, guid: 071e09f18aa293946b7379b50a4a0e78, type: 3}
+  femaleBackground: {fileID: 21300000, guid: eb78eb9b8334fe24a8d7865529336034, type: 3}
+  maleFaces:
+  - {fileID: 21300000, guid: 4d4ba9129122dfd478393688521bbad5, type: 3}
+  - {fileID: 21300000, guid: 5c77bf2b48054474d9be76b1d2e49930, type: 3}
+  - {fileID: 21300000, guid: ecff2e4d63f64e647946d50016810a60, type: 3}
+  - {fileID: 21300000, guid: fa1ff21c9178daa499c207131bf4201e, type: 3}
+  - {fileID: 21300000, guid: 9838046cac08d5d46938dd4501bf5cdb, type: 3}
+  - {fileID: 21300000, guid: 7f81a97b70afa4e4eb0fe2406e89033e, type: 3}
+  - {fileID: 21300000, guid: 7abcc0d9a05d8894b8baa283854eff12, type: 3}
+  - {fileID: 21300000, guid: 994491b6b41725849a216881c4a7a8e0, type: 3}
+  - {fileID: 21300000, guid: c36913bc621b5f74a9a7106750f131fa, type: 3}
+  - {fileID: 21300000, guid: 45cfd4bdb10746c4dbd1d8ea9dcf84b5, type: 3}
+  femaleFaces:
+  - {fileID: 21300000, guid: e16ac8cff9645d747b022eca662136b9, type: 3}
+  - {fileID: 21300000, guid: 61fd638e3a97ffb4daeeb1dea70abe96, type: 3}
+  - {fileID: 21300000, guid: 098bd0b4f64e96b409d2185612d117bd, type: 3}
+  - {fileID: 21300000, guid: 27f51ae79e1bca4429bbc738fdc56b3c, type: 3}
+  - {fileID: 21300000, guid: e0c0b2065870d854d92dc13f382dc101, type: 3}
+  - {fileID: 21300000, guid: c2e6d419aa8e8e44382d6f033182c716, type: 3}
+  - {fileID: 21300000, guid: 83f4337039db7124ab71d7b064bd61ab, type: 3}
+  - {fileID: 21300000, guid: ff192fe857f5f5d4abf04fa165f10829, type: 3}
+  - {fileID: 21300000, guid: 8db61a095b7c1f14490a16e765aeebcf, type: 3}
+  - {fileID: 21300000, guid: cb880721b1ec0d7478b9532ebb0d6f29, type: 3}
   maleBonus:
     STR: -10
     INT: 10

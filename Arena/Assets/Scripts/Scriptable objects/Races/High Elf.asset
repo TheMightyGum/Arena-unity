@@ -12,7 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be96b504f00160244a110cf0d583fa6f, type: 3}
   m_Name: High Elf
   m_EditorClassIdentifier: 
-  RaceName: High Elf
+  maleBackground: {fileID: 21300000, guid: 53b9c0f40f3effa46855750a38094631, type: 3}
+  femaleBackground: {fileID: 21300000, guid: 6fcd720fcc2d4b24f8480763bd0c2559, type: 3}
+  maleFaces:
+  - {fileID: 21300000, guid: bbc6a16abd8dfdd41a10c407cad41f34, type: 3}
+  - {fileID: 21300000, guid: f29976e68f84fa34e9dcb1c2c73cf028, type: 3}
+  - {fileID: 21300000, guid: 621b99f2dc5819c46a6ae4a4659c475a, type: 3}
+  - {fileID: 21300000, guid: 9b034edbfdfa7c741a506daa9a23b5d7, type: 3}
+  - {fileID: 21300000, guid: 8e98e16d8c1185542a31ded1e4c99e2a, type: 3}
+  - {fileID: 21300000, guid: 83a89ba47912c7348938e34ae862f92b, type: 3}
+  - {fileID: 21300000, guid: 9f23b61f8b01c9d419cc59472dd6e383, type: 3}
+  - {fileID: 21300000, guid: a2b0dfb259b47ed489d8a85ad927e299, type: 3}
+  - {fileID: 21300000, guid: f0a634a0375524f41b666166365936cf, type: 3}
+  - {fileID: 21300000, guid: 0149c66f8fb02624b919e6ae5d8c4e28, type: 3}
+  femaleFaces:
+  - {fileID: 21300000, guid: 8ebff9f7ba173424d8b541ae255a0e70, type: 3}
+  - {fileID: 21300000, guid: 7357893e7bfa6d345b1c82134b79c6f8, type: 3}
+  - {fileID: 21300000, guid: f4882070514e6ad469bd7321f4f6b015, type: 3}
+  - {fileID: 21300000, guid: 6b6e231ba33cfd64bbf5a198ffb8f354, type: 3}
+  - {fileID: 21300000, guid: 73c1d2a86a9eeca4c82a086bf944c65a, type: 3}
+  - {fileID: 21300000, guid: fab94070acf838a46b5c743f6c8526b5, type: 3}
+  - {fileID: 21300000, guid: 95d6cf88768f8694381da5ace895168f, type: 3}
+  - {fileID: 21300000, guid: f3f0fd37d337b574d83df3126484fa17, type: 3}
+  - {fileID: 21300000, guid: 7794ca07c70f02141b0da6f99e3c6806, type: 3}
+  - {fileID: 21300000, guid: eb3929ca40e6073479543e2ad9042043, type: 3}
   maleBonus:
     STR: -10
     INT: 10

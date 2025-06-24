@@ -12,7 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be96b504f00160244a110cf0d583fa6f, type: 3}
   m_Name: Redguard
   m_EditorClassIdentifier: 
-  RaceName: Redguard
+  maleBackground: {fileID: 21300000, guid: f6e481ebb1301d5448cca9c2f2b89001, type: 3}
+  femaleBackground: {fileID: 21300000, guid: 705a970b6b884b14da7723be12460f08, type: 3}
+  maleFaces:
+  - {fileID: 21300000, guid: d5c8e7eb0b4cb5840aa5c350771734db, type: 3}
+  - {fileID: 21300000, guid: bc5c3e7758ec8a04785358bb70ac4a90, type: 3}
+  - {fileID: 21300000, guid: 7079e6aea3f7af14db1e6756791622d2, type: 3}
+  - {fileID: 21300000, guid: 7180440f317f5af45bb6cdc672551e49, type: 3}
+  - {fileID: 21300000, guid: adf06a900f57f5040b854f8b0be0a321, type: 3}
+  - {fileID: 21300000, guid: 0037da940244dd145afa2a5cb0edf14f, type: 3}
+  - {fileID: 21300000, guid: 307d290e097989f49b95fbd566929487, type: 3}
+  - {fileID: 21300000, guid: 0771a41d81d259d4bb16137fff293ba4, type: 3}
+  - {fileID: 21300000, guid: 3870249c07ffa814ab48e544d23db9e8, type: 3}
+  - {fileID: 21300000, guid: 34fe4323255b5e94bb19f60de6db9911, type: 3}
+  femaleFaces:
+  - {fileID: 21300000, guid: 3a0c408639abc5b468bd113a8b3b82e3, type: 3}
+  - {fileID: 21300000, guid: d507f037e7a918a4f924dee952203832, type: 3}
+  - {fileID: 21300000, guid: 909e8c1903d3d6841954487cfd198eac, type: 3}
+  - {fileID: 21300000, guid: 552ea539e5cb3ca45b805f5a110fb34a, type: 3}
+  - {fileID: 21300000, guid: 937ae560762d2b640b2d92254a5fcb15, type: 3}
+  - {fileID: 21300000, guid: 71beb70fbe752914c9932ca8366fb3a1, type: 3}
+  - {fileID: 21300000, guid: 87f3f1cd2db92924eabc63f6d3da35c9, type: 3}
+  - {fileID: 21300000, guid: 283a8f9f723bc3641b995ee54fce1719, type: 3}
+  - {fileID: 21300000, guid: 9a00bd9140daecb448238d7c3d1ac482, type: 3}
+  - {fileID: 21300000, guid: 052cbb1403401384baa756b0985576c3, type: 3}
   maleBonus:
     STR: 0
     INT: -10

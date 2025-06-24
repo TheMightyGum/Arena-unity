@@ -16,11 +16,15 @@ public struct StatBonus
 [CreateAssetMenu(fileName = "Races", menuName = "Scriptable Objects/Races")]
 public class Races : ScriptableObject
 {
+    public Sprite maleBackground;
+    public Sprite femaleBackground;
+    public Sprite[] maleFaces;
+    public Sprite[] femaleFaces;
+
     public StatBonus maleBonus;
     public StatBonus femaleBonus;
 
-    public StatBonus GetBonus(bool isMale)
-    {
-        return isMale ? maleBonus : femaleBonus;
-    }
+    public Sprite GetBackground(bool isMale) { return isMale ? maleBackground : femaleBackground; }
+    public Sprite GetFace(bool isMale, int i) { return isMale ? maleFaces[i] : femaleFaces[i]; }
+    public StatBonus GetBonus(bool isMale) { return isMale ? maleBonus : femaleBonus; }
 }
