@@ -2043,6 +2043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsMenu: {fileID: 721116479}
+  isPaused: 0
 --- !u!1 &651267923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,6 +2842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a7351a46270fe4d8b54038eb9e0928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 624476638}
   camera: {fileID: 1823688466}
   runSpeed: 6
   airSpeed: 10
@@ -5722,6 +5724,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 389738467493935706, guid: 9fdbdc42f26194b4e989bdbce3c909ff, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 624476638}
     - target: {fileID: 1643950531794247594, guid: 9fdbdc42f26194b4e989bdbce3c909ff, type: 3}
       propertyPath: m_Name
       value: Goblin

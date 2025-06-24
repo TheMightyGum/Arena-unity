@@ -62,10 +62,4 @@ public class StatsMenu : MonoBehaviour
     }
 
     string displaySign(int value) { return value >= 0 ? "+" + value.ToString() : value.ToString(); }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

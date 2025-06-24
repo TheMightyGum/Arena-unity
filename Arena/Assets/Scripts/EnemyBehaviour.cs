@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 public class EnemyBehaviour : MonoBehaviour
 {
+    [SerializeField] UIManager manager;
     public EnemyStats stats;
     public int maxHealth;
     public int curHealth;
@@ -56,6 +57,8 @@ public class EnemyBehaviour : MonoBehaviour
     void Update()
     {
         Visuals.rotation = Quaternion.Euler(0, mainCam.transform.rotation.eulerAngles.y, 0);
+
+        if (manager.isPaused) return;
 
         if (mainCam.transform.position != lastCamPos || transform.hasChanged)
         {

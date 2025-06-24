@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
+    [SerializeField] UIManager manager;
     CharacterController characterController;
     InputAction moveAction;
     InputAction jumpAction;
@@ -32,6 +33,7 @@ public class playerMovement : MonoBehaviour
 
     void Update()
     {
+        if (manager.isPaused) return;
         Vector3 move = moveAction.ReadValue<Vector2>().x * transform.right + moveAction.ReadValue<Vector2>().y * transform.forward;
         Vector2 look = lookAction.ReadValue<Vector2>() * Time.deltaTime * sensitivity;
 
