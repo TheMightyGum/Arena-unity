@@ -2042,7 +2042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e3a0437d9377e4198c902ebf8f599f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statsMenu: {fileID: 0}
+  statsMenu: {fileID: 721116479}
 --- !u!1 &651267923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,7 +2333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &721116480
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2797,7 +2797,8 @@ MonoBehaviour:
   playerName: Talin Warhaft
   playerRace: {fileID: 11400000, guid: d390ee3e313ff8843932e314e1983086, type: 2}
   playerClass: {fileID: 11400000, guid: 96d3ef0946fec1e40833157e47e94a2c, type: 2}
-  isMale: 1
+  isMale: 0
+  faceIndex: 5
   STR: 40
   INT: 40
   WIL: 40
@@ -2821,6 +2822,8 @@ MonoBehaviour:
   gold: 0
   level: 1
   XP: 0
+  paperdoll: {fileID: 1621882824}
+  faceImage: {fileID: 133404699}
   FatigueBar: {fileID: 1792184402}
   HPbar: {fileID: 419960324}
   SPbar: {fileID: 2088027732}

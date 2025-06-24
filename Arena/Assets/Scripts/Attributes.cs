@@ -7,6 +7,7 @@ public class Attributes : MonoBehaviour
     public Races playerRace;
     public Classes playerClass;
     public bool isMale = true;
+    [SerializeField] int faceIndex;
 
     public int STR = 40;
     public int INT = 40;
@@ -37,6 +38,8 @@ public class Attributes : MonoBehaviour
     public int level;
     public int XP;
 
+    [SerializeField] Image paperdoll;
+    [SerializeField] Image faceImage;
     public Image FatigueBar;
     public Image HPbar;
     public Image SPbar;
@@ -84,6 +87,9 @@ public class Attributes : MonoBehaviour
 
         level = 1;
         XP = 0;
+
+        paperdoll.sprite = playerRace.GetBackground(isMale);
+        faceImage.sprite = playerRace.GetFace(isMale, faceIndex);
     }
 
     public void Update()
