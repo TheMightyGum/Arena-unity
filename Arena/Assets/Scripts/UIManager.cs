@@ -5,6 +5,7 @@ public class UIManager : MonoBehaviour
 {
 
     InputAction openMenu;
+    [SerializeField] GameObject statsMenu;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,8 +18,7 @@ public class UIManager : MonoBehaviour
     {
         if (openMenu.WasPressedThisFrame())
         {
-            Transform menu = transform.GetChild(2);
-            menu.gameObject.SetActive(!menu.gameObject.activeSelf);
+            statsMenu.SetActive(!statsMenu.activeSelf);
         }
     }
 }
