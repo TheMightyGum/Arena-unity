@@ -34,8 +34,9 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         if (manager.isPaused) return;
+
         Vector3 move = moveAction.ReadValue<Vector2>().x * transform.right + moveAction.ReadValue<Vector2>().y * transform.forward;
-        Vector2 look = lookAction.ReadValue<Vector2>() * Time.deltaTime * sensitivity;
+        Vector2 look = lookAction.ReadValue<Vector2>() * ((float)sensitivity / 100);
 
         if (characterController.isGrounded) //On the ground
         {
@@ -56,11 +57,10 @@ public class playerMovement : MonoBehaviour
         }
         characterController.Move(velocity * Time.deltaTime); //Moves player
 
-        //Mouse rotation
+        //Mouselook
         characterController.transform.Rotate(0, look.x, 0);
         xRotation -= look.y;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         camera.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
-        
     }
 }
