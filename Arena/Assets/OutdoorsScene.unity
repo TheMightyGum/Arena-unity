@@ -2045,8 +2045,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statsMenu: {fileID: 721116479}
   fadeout: {fileID: 1466161690}
-  fadeTime: 0.5
-  darkTime: 0.1
+  fadeTime: 0.4
+  darkTime: 0.2
   isPaused: 0
   isFading: 0
 --- !u!1 &651267923
