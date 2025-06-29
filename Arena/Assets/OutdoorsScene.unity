@@ -2023,6 +2023,7 @@ RectTransform:
   - {fileID: 769538534}
   - {fileID: 1387587785}
   - {fileID: 721116480}
+  - {fileID: 1466161689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2043,7 +2044,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statsMenu: {fileID: 721116479}
+  fadeout: {fileID: 1466161690}
+  fadeTime: 0.5
+  darkTime: 0.1
   isPaused: 0
+  isFading: 0
 --- !u!1 &651267923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,8 +2803,8 @@ MonoBehaviour:
   playerName: Talin Warhaft
   playerRace: {fileID: 11400000, guid: d390ee3e313ff8843932e314e1983086, type: 2}
   playerClass: {fileID: 11400000, guid: 96d3ef0946fec1e40833157e47e94a2c, type: 2}
-  isMale: 0
-  faceIndex: 5
+  isMale: 1
+  faceIndex: 1
   STR: 40
   INT: 40
   WIL: 40
@@ -2847,7 +2852,7 @@ MonoBehaviour:
   runSpeed: 6
   airSpeed: 10
   airControl: 2
-  sensitivity: 40
+  sensitivity: 25
   jumpHeight: 5
   gravity: -20
 --- !u!143 &831393421
@@ -3958,6 +3963,81 @@ RectTransform:
   m_AnchoredPosition: {x: 120, y: 120}
   m_SizeDelta: {x: 174, y: 186}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1466161688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466161689}
+  - component: {fileID: 1466161691}
+  - component: {fileID: 1466161690}
+  m_Layer: 5
+  m_Name: Fadeout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1466161689
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466161688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 624476637}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1466161690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466161688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1466161691
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466161688}
+  m_CullTransparentMesh: 1
 --- !u!1 &1505129605
 GameObject:
   m_ObjectHideFlags: 0
