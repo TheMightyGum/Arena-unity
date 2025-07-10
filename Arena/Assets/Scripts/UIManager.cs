@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
 
         statsMenu.SetActive(false);
 
-        fadeout.gameObject.SetActive(true);
+        fadeout.gameObject.SetActive(false);
         setFadeAlpha(0f);
 
         isPaused = false;
@@ -39,14 +39,17 @@ public class UIManager : MonoBehaviour
         {
             if (statsMenu.activeSelf) //If already in menu
             {
-                StartCoroutine(FadeInto(statsMenu, false));
+                CloseMenu();
             }
             else
             {
-                StartCoroutine(FadeInto(statsMenu, true));
+                OpenMenu();
             }
         }
     }
+
+    public void OpenMenu() { StartCoroutine(FadeInto(statsMenu, true)); }
+    public void CloseMenu() { StartCoroutine(FadeInto(statsMenu, false)); }
 
     public IEnumerator FadeInto(GameObject menu, bool setActive)
     {
@@ -59,7 +62,8 @@ public class UIManager : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
-
+        
+        fadeout.gameObject.SetActive(true);
         isFading = true;
         float _time = 0f;
         while(_time < fadeTime)
@@ -78,6 +82,7 @@ public class UIManager : MonoBehaviour
         }
         fadeColor.a = 1f;
         isFading = false;
+        fadeout.gameObject.SetActive(false);
 
         if (setActive)
         {
