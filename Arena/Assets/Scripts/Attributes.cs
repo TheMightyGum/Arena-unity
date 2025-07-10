@@ -6,8 +6,7 @@ public class Attributes : MonoBehaviour
     public string playerName;
     public Races playerRace;
     public Classes playerClass;
-    public bool isMale = true;
-    [SerializeField] int faceIndex;
+    public bool isMale;
 
     public int STR = 40;
     public int INT = 40;
@@ -38,8 +37,6 @@ public class Attributes : MonoBehaviour
     public int level;
     public int XP;
 
-    [SerializeField] Image paperdoll;
-    [SerializeField] Image faceImage;
     public Image FatigueBar;
     public Image HPbar;
     public Image SPbar;
@@ -88,8 +85,8 @@ public class Attributes : MonoBehaviour
         level = 1;
         XP = 0;
 
-        paperdoll.sprite = playerRace.GetBackground(isMale);
-        faceImage.sprite = playerRace.GetFace(isMale, faceIndex);
+        //Update paperdoll (never changes)
+        GetComponent<Paperdoll>().updatePaperdoll(isMale, playerRace);
     }
 
     public void Update()
@@ -105,6 +102,8 @@ public class Attributes : MonoBehaviour
         Transform parent = SPbar.transform.parent;
         Image back = parent.GetChild(0).GetComponent<Image>();
         Image overlay = parent.GetChild(4).GetComponent<Image>();
+
+        //If player class can use magic, display 3 resource bars, else only 2 since magicka is always zero
         if (canUseMagic)
         {
             SPbar.enabled = true;

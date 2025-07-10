@@ -19,6 +19,8 @@ public class UIManager : MonoBehaviour
     {
         openMenu = InputSystem.actions.FindAction("StatsMenu");
 
+        statsMenu.SetActive(false);
+
         fadeout.gameObject.SetActive(true);
         setFadeAlpha(0f);
 
