@@ -80,7 +80,6 @@ public class UIManager : MonoBehaviour
             setFadeAlpha(_time / fadeTime);
             yield return null;
         }
-        fadeColor.a = 1f;
         isFading = false;
         fadeout.gameObject.SetActive(false);
 
