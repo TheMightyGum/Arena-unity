@@ -6,8 +6,19 @@ using System.Collections;
 public class UIManager : MonoBehaviour
 {
     InputAction openMenu;
+
+    [SerializeField] GameObject menu;
     [SerializeField] GameObject statsMenu;
+    [SerializeField] GameObject invMenu;
+
+    [SerializeField] RectTransform levelText;
+
     [SerializeField] Image fadeout;
+    [SerializeField] Image menuScreen;
+
+    [SerializeField] Sprite statsMenuSprite;
+    [SerializeField] Sprite invMenuSprite;
+
     public float fadeTime;
     public float darkTime;
     public bool isPaused;
@@ -18,7 +29,7 @@ public class UIManager : MonoBehaviour
     {
         openMenu = InputSystem.actions.FindAction("StatsMenu");
 
-        statsMenu.SetActive(false);
+        menu.SetActive(false);
 
         fadeout.gameObject.SetActive(false);
         setFadeAlpha(0f);
@@ -36,7 +47,7 @@ public class UIManager : MonoBehaviour
     {
         if (openMenu.WasPressedThisFrame() && !isFading)
         {
-            if (statsMenu.activeSelf) //If already in menu
+            if (menu.activeSelf) //If already in menu
             {
                 CloseMenu();
             }
@@ -47,8 +58,24 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void OpenMenu() { StartCoroutine(FadeInto(statsMenu, true)); }
-    public void CloseMenu() { StartCoroutine(FadeInto(statsMenu, false)); }
+    public void switchToStats()
+    {
+        levelText.anchoredPosition = new Vector2(-115, -67);
+        statsMenu.SetActive(true);
+        invMenu.SetActive(false);
+    }
+    public void switchToInv()
+    {
+        levelText.anchoredPosition = new Vector2(-32, 77);
+        statsMenu.SetActive(false);
+        invMenu.SetActive(true);
+    }
+    public void OpenMenu() 
+    { 
+        StartCoroutine(FadeInto(menu, true));
+    }
+
+    public void CloseMenu() { StartCoroutine(FadeInto(menu, false)); }
 
     public IEnumerator FadeInto(GameObject menu, bool setActive)
     {
