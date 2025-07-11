@@ -63,12 +63,14 @@ public class UIManager : MonoBehaviour
         levelText.anchoredPosition = new Vector2(-115, -67);
         statsMenu.SetActive(true);
         invMenu.SetActive(false);
+        menuScreen.sprite = statsMenuSprite;
     }
     public void switchToInv()
     {
         levelText.anchoredPosition = new Vector2(-32, 77);
         statsMenu.SetActive(false);
         invMenu.SetActive(true);
+        menuScreen.sprite = invMenuSprite;
     }
     public void OpenMenu() 
     { 
