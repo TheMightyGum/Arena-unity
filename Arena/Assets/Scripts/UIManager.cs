@@ -8,7 +8,6 @@ public class UIManager : MonoBehaviour
     InputAction openMenu;
     [SerializeField] GameObject statsMenu;
     [SerializeField] Image fadeout;
-    private Color fadeColor;
     public float fadeTime;
     public float darkTime;
     public bool isPaused;
