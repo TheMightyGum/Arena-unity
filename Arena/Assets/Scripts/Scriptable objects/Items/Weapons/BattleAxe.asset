@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: BattleAxe
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
-  itemName: 
+  itemName: Battle Axe
   type: 0
-  weight: 0
-  minDamage: 0
-  maxDamage: 0
-  isTwoHanded: 0
+  weight: 12
+  minDamage: 2
+  maxDamage: 16
+  isTwoHanded: 1

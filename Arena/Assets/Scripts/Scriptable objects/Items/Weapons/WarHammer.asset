@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: WarHammer
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
-  itemName: 
+  itemName: War Hammer
   type: 0
-  weight: 0
-  minDamage: 0
-  maxDamage: 0
-  isTwoHanded: 0
+  weight: 16
+  minDamage: 3
+  maxDamage: 18
+  isTwoHanded: 1

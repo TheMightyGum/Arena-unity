@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Saber
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
-  itemName: 
+  itemName: Saber
   type: 0
-  weight: 0
-  minDamage: 0
-  maxDamage: 0
+  weight: 7
+  minDamage: 3
+  maxDamage: 12
   isTwoHanded: 0

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Wakizashi
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
-  itemName: 
+  itemName: Wakizashi
   type: 0
-  weight: 0
-  minDamage: 0
-  maxDamage: 0
+  weight: 2
+  minDamage: 1
+  maxDamage: 10
   isTwoHanded: 0

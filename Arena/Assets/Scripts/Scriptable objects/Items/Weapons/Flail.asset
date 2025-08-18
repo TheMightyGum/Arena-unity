@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Flail
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
-  itemName: 
+  itemName: Flail
   type: 0
-  weight: 0
-  minDamage: 0
-  maxDamage: 0
-  isTwoHanded: 0
+  weight: 10
+  minDamage: 2
+  maxDamage: 14
+  isTwoHanded: 1

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Tanto
   m_EditorClassIdentifier: Assembly-CSharp::Weapon
-  itemName: 
+  itemName: Tanto
   type: 0
-  weight: 0
-  minDamage: 0
-  maxDamage: 0
+  weight: 0.5
+  minDamage: 1
+  maxDamage: 8
   isTwoHanded: 0
