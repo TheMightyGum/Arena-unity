@@ -14,4 +14,5 @@ public class itemMaterials : ScriptableObject
 
     public int metalTier; //0:mundane weapon, 1:Harms ice golems, 2:Harms Medusa & Stone Golem, 3:Harms everything
     public bool effectiveAgainstVampires; //Deals double damage
+    public bool isDefault; //So the code knows not to apply the "plate" adjective to weapons
 }
